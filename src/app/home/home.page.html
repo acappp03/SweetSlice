@@ -1,0 +1,149 @@
+  <ion-header color="primary">
+    <ion-toolbar>
+      <ion-title>
+        SweetSlice
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content [fullscreen]="true" class="ppink">
+    <ion-card class="vwhite">
+      <ion-slides pager="true" [options]="slideOptions" #slides>
+        <ion-slide [routerLink]="['/k1']">
+          <img src="assets\keklapisdiva.jpeg" />
+        </ion-slide>
+        <ion-slide [routerLink]="['/k11']">
+          <img src="assets\keklapisoreocheese.jpg" />
+        </ion-slide>
+        <ion-slide [routerLink]="['/k16']">
+          <img src="assets\keklapiscocopie.jpg" />
+        </ion-slide>
+      </ion-slides>
+      <ion-card-header>
+        <ion-card-title class="black">Selamat datang ke SweetSlice</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Cari resipi Kek Lapis kegemaran anda di sini
+      </ion-card-content>
+    </ion-card>
+    
+  
+    <ion-card class="vwhite">
+      <ion-card-title class="black" >
+        Antara Yang Popular
+      </ion-card-title>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card routerLink="/k4" class="cbrown">
+              <ion-img src="assets\keklapismasamanis.JPG"></ion-img><br>
+              <figcaption>Kek Lapis Masam Manis</figcaption><br>
+            </ion-card>
+          </ion-col>
+  
+          <ion-col>
+            <ion-card routerLink="/k8" class="cbrown">
+              <ion-img src="assets\keklapiscadbury.jpg"></ion-img><br>
+              <figcaption>Kek Lapis Cadbury</figcaption><br>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card routerLink="/k14" class="cbrown">
+              <ion-img src="assets\keklapisrainbowcheese.jpg"></ion-img><br>
+              <figcaption>Kek Lapis Rainbow Cheese</figcaption><br>
+            </ion-card>
+          </ion-col>
+  
+          <ion-col>
+            <ion-card routerLink="/k3" class="cbrown">
+              <ion-img src="assets\keklapiscoklatcheese.jpg"></ion-img><br>
+              <figcaption>Kek Lapis Coklat Cheese</figcaption><br>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  
+    <ion-card class="vwhite">
+      <ion-card-header>
+        <ion-card-title>Kategori Cheese</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item routerLink="/k3">
+            <ion-thumbnail slot="start">
+              <img src="assets\keklapiscoklatcheese.jpg" />
+            </ion-thumbnail>
+            <ion-label>Kek Lapis Coklat Chesee</ion-label>
+          </ion-item>
+    
+          <ion-item routerLink="/k5">
+            <ion-thumbnail slot="start">
+              <img src="assets\keklapisharimaumalaya.jpg" />
+            </ion-thumbnail>
+            <ion-label>Kek Lapis Harimau Malaya</ion-label>
+          </ion-item>
+    
+          <ion-item routerLink="/k6">
+            <ion-thumbnail slot="start">
+              <img src="assets\keklapistembikaicheese.JPG" />
+            </ion-thumbnail>
+            <ion-label>Kek Lapis Tembikai Cheese</ion-label>
+          </ion-item>
+
+          <ion-item routerLink="/k9">
+            <ion-thumbnail slot="start">
+              <img src="assets\keklapismintcoklatcheese.jpg" />
+            </ion-thumbnail>
+            <ion-label>Kek Lapis Mint, Coklat, dan Cheese</ion-label>
+          </ion-item>
+
+          <ion-item routerLink="/k11">
+            <ion-thumbnail slot="start">
+              <img src="assets\keklapisoreocheese.jpg" />
+            </ion-thumbnail>
+            <ion-label>Kek Lapis Oreo Cheese</ion-label>
+          </ion-item>
+    
+          <ion-item lines="none" routerLink="/k13">
+            <ion-thumbnail slot="start">
+              <img src="assets\keklapistuananasmikael.jpg" />
+            </ion-thumbnail>
+            <ion-label>Kek Lapis Tuan Anas Mikael</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  
+  </ion-content>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-tabs>
+        <ion-tab-bar slot="bottom">
+          <ion-tab-button [routerLink]="['/home']">
+            <ion-icon name="home"></ion-icon>
+            <ion-label>Home</ion-label>
+          </ion-tab-button>
+  
+          <ion-tab-button [routerLink]="['/library-recipe']">
+            <ion-icon name="book"></ion-icon>
+            <ion-label>Library</ion-label>
+          </ion-tab-button>
+  
+          <ion-tab-button [routerLink]="['/tips']">
+            <ion-icon name="information-circle"></ion-icon>
+            <ion-label>Tips</ion-label>
+          </ion-tab-button>
+
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-toolbar>
+  </ion-footer>
+  
